@@ -1,3 +1,5 @@
+@import url(./variable.css);
+
 html,
 body {
   width: 100%;
@@ -12,8 +14,8 @@ p {
 }
 
 header {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 #app {
@@ -22,7 +24,7 @@ header {
 }
 
 .navbar__wrapper {
-  background-color: #f8f8f8;
+  background-color: var(--color-milky);
   border-radius: 10px;
   padding: 20px;
 }
@@ -34,8 +36,8 @@ header {
 }
 
 .navbar__wrapper .navbar__navigate {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--color-black);
+  color: var(--color-white);
   width: fit-content;
   padding: 2px 10px;
   border-radius: 25px;
@@ -45,11 +47,11 @@ header {
   font-size: 14px;
   font-weight: bold;
   margin-top: 20px;
-  color: #141414;
+  color: var(--color-dark-gary);
 }
 
 .navbar__list .navbar__item {
-  color: #949494;
+  color: var(--color-philly);
   font-size: 14px;
   margin-top: 10px;
   font-weight: 400;
@@ -63,7 +65,7 @@ header {
   padding-top: 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: var(--size-medium)) {
   .card__wrapper {
     padding: 5px;
   }
@@ -73,7 +75,7 @@ header {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: var(--size-large)) {
   .card__wrapper:nth-child(-n + 3) {
     padding-top: 0;
   }
@@ -81,9 +83,9 @@ header {
 
 .card__wrapper .card__content {
   padding: 15px;
-  border: 1px solid #ebebeb;
+  border: 1px solid var(--color-milky);
   border-radius: 10px;
-  background-color: white;
+  background-color: var(--color-white);
 }
 
 .card__wrapper .card__content .card__content--title {
